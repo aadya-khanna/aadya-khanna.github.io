@@ -1,0 +1,168 @@
+<html>
+<head>
+<title> Party In the Park</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="png" href="pipfav.png"/>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('pip.jpg');
+  min-height: 100%;
+}
+.responsive {
+  width: 100%;
+  height: auto%;
+}
+ul {
+  font-size: 18px
+}
+@font-face {
+  font-family: ADELIA; src: url('ADELIA.otf');
+}
+@font-face {
+  font-family: CB; src: url('Candy Beans.otf');
+}
+@font-face {
+  font-family: SR; src: url('Simply Rounded.ttf');
+}
+
+
+.w3-theme {color:#000 !important; background-color:#f7d750 !important}
+.w3-theme-d1 {color:#000 !important; background-color:#005bbb !important}
+.w3-theme-d2 {color:#000 !important; background-color:#fed500 !important}
+
+
+
+</style>
+</head>
+<body style="background-color: #F7D750">
+
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="responsive bgimg"> </div>
+</nav>
+
+<!-- Hidden Sidebar -->
+
+ <nav class="w3-sidebar w3-grey w3-animate-right w3-xxlarge w3-mobile" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button  w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+<!--     <a href="#" class="w3-bar-item w3-button w3-hover-black w3-theme-d5" onclick="closeNav()" style="font-family: ADELIA">Home </a>   -->
+    <a href="#fnd" class="w3-bar-item w3-button w3-theme-d1 w3-hover-black" onclick="closeNav()" style="font-family: CB"> Food and Drinks </a>
+    <a href="#music" class="w3-bar-item w3-button w3-theme-d1 w3-hover-black" onclick="closeNav()" style="font-family: CB"> Music</a>
+    <a href="#acts" class="w3-bar-item w3-button w3-theme-d2 w3-hover-black" onclick="closeNav()" style="font-family: CB"a>Activities</a>
+    <a href="#charities" class="w3-bar-item w3-button w3-theme-d2 w3-hover-black" onclick="closeNav()" style="font-family: CB">Charities</a>
+  </div>
+
+</nav>
+
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-theme w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:64px 16px" id="home">
+    <h1 style="font-family: ADELIA; font-size:60px; color:#005bbb"><b> Party In the Park </b></h1>
+    <p style="font-family: CB" class="w3-large"> Saturday April 30th </p>
+    <br>
+    <p style="font-family: CB; font-size:20px"> Come and join us at ISP for the Party in the Park: fun, food and live music. Bring a blanket or lawn chair kick back, relax and be entertained while the children are involved in good active fun. Admission free with paid activities, proceeds going to local charities supporting ukrainian refugees. Hope to see you here.</p>
+  </header>
+
+  <!-- Food and drinks section -->
+  <div class="w3-padding-16 w3-content w3-justify" id="fnd">
+    <h2 style="font-family: ADELIA; color:#005bbb" > Food and Drinks </h2>
+    <hr class="w3-opacity">
+
+      <ul style="font-size: 20px; font-family: CB">
+        <li> Food truck - Zátiší (Indian cuisine, Brownies etc) </li>
+        <li> Food stand - <a href="https://www.facebook.com/mujfalafel/" target="_blank"> Muj Falafel </a> (Falafel) </li>
+        <li> Burger truck - <a href="https://www.facebook.com/hashtag/zestanku" target="_blank"> #ZeStanku </a> (Burgers, Hotdog) </li>
+        <li> Icecream stand (Mochi) - <a href="https://www.motiko-official.cz/" target="_blank"> Motiko </a> (Vegan ice-cream desserts)</li>
+          <li> Coffee truck - <a href="https://www.facebook.com/tukafeauto/" target="_blank"> TuKafe </a> (Coffee, cakes, desserts)</li>
+        <li> Beer stand - Únetický pivovar (Tapped beers, beers in PET bottles, pretzels) </li>
+      </ul>
+    <p style="font-size: 20px; font-family: CB"> Soft drinks and juices available </p>
+  </div>
+
+  <!-- Music Section -->
+  <div class="w3-content w3-padding-16" id="music">
+    <h2 style="font-family: ADELIA; color:#005bbb">Music</h2>
+    <hr class="w3-opacity">
+    <ul style="font-size:20px; font-family: CB">
+      <li> <a href="https://soundcloud.com/djedknowles" target="_blank"> DJ Ed Knowles </a> </li>
+      <li> Dale Ethridge (Delta Blues and acoustic hits) </li>
+      <li> Chip, Dale and Milan (Acoustic Irish punk) </li>
+      <li> The Sarkas </li>
+      <li> Jazz Funk Quintet</li>
+    </ul>
+  </div>
+
+  <!-- Acts section -->
+    <div class="w3-content w3-justify w3-padding-16" id="acts">
+      <h2 style="font-family: ADELIA; color:#005bbb">Activities</h2>
+      <hr class="w3-opacity">
+      <ul style="font-size:20px; font-family: CB">
+        <li> Body painting</li>
+        <li> Bouncy castle</li>
+        <li> Balloon art</li>
+        <li> Pie the leader</li>
+        <li> Ring toss </li>
+        <li> Photo booth </li>
+        <li>  Field games</li>
+      </ul>
+        <p style="font-size:20px; font-family: CB"> and other fun stations and activities...</p>
+    </div>
+
+  <!-- Charities section -->
+    <div class="w3-content w3-padding-16" id="charities">
+        <h2 style="font-family: ADELIA ;color:#005bbb">Charities</h2>
+        <hr class="w3-opacity">
+          <p style="font-size:25px; font-family: CB"> Supporting Charities - </p>
+        <ul style="font-size:25px; font-family: CB">
+          <li> <a href="https://www.amity.ngo/" target=_blank> Amity </a></li> <br>
+          <li> <a href="https://dignity6.webnode.com/" target=_blank> Dignity </a> </li>
+        </ul>
+      <br>
+      <br>
+
+
+
+  </div>
+</div>
+
+
+  <!-- Footer (that doesn't exist)-->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin: -24px">
+  </footer>
+
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+</body>
+</html>
